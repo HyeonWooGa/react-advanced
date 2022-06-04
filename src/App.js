@@ -24,6 +24,9 @@ const rotAni = keyframes`
 
 const Emoji = styled.span`
   font-size: 36px;
+  &:hover {
+    font-size: 90px;
+  }
 `;
 
 const Box = styled.div`
@@ -34,9 +37,6 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${rotAni} 1s linear infinite;
-  ${Emoji}:hover {
-    font-size: 98px;
-  }
 `;
 
 function App() {
